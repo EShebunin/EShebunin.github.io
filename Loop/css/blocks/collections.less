@@ -1,0 +1,39 @@
+//main: ../style.less
+.collections{
+    color: @black;
+    &__nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__card{
+        min-width: 555px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__descr{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &__title{
+        font-weight: @fw_medium;
+        font-size: 24px;
+        text-transform: uppercase;
+        &--ligth{
+            font-weight: @fw_ligth;
+        }
+    }
+    &__text{
+        padding-top: 25px;
+        padding-bottom: 40px;
+        font-weight: @fw_ligth;
+        font-size: 16px;
+    }
+    &__photo{
+        padding-top: 80px;
+    }
+}
+.catalog{
+    display: flex;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,30 @@
+//compress: false
+@import "vars";
+html{
+    font-size: @default__fs;
+}
+body{
+    font-family: @font__main;
+    font-size: 1rem;
+    color: @black;
+    background-color: @cream;
+}
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,p,span{
+    margin: 0;
+    padding: 0;
+}
+
+/*Blocks*/
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/logo";
+@import "blocks/intro";
+@import "blocks/btn";
+@import "blocks/offer";
+@import "blocks/collections";
+@import "blocks/models";
+@import "blocks/sale";
+@import "blocks/footer";

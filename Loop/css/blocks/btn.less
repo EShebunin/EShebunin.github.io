@@ -1,0 +1,30 @@
+//main: ../style.less
+.button{
+    display: inline-block;
+    max-width: 240px;
+    padding: 1.06em 1.875em;
+    margin: 0;
+    cursor: pointer;
+
+    background-color: @accent;
+
+    font-family: inherit;
+    font-weight: @fw_regular;
+
+    font-size: 16px;
+    text-transform: uppercase;
+    color: @white;
+    text-decoration: none;
+    text-align: center;
+
+    &--sm{
+        max-width: 80px;
+        padding: 0.5em 1.875em;
+    }
+    &--md{
+        font-size: 14px;
+        min-width: 185px;
+        min-height: 40px;
+        padding: 0.714em 1.875em;
+    }
+}

@@ -1,0 +1,172 @@
+:root {
+  --color-black: #2B2A2C;
+  --color-gray: #6A696B;
+  --color-light: #8D8D8E;
+  --main-font-fam: 'Montserrat', sans-serif;
+  --main-font-size: 15px; }
+
+@media (max-width: 1034px) {
+  :root {
+    --main-font-size: 10px; } }
+
+@media (max-width: 320px) {
+  :root {
+    --main-font-size: 9px; } }
+
+@font-face {
+  font-family: 'Icons';
+  src: url("../assets/fonts/fontello.woff2?6865670") format("woff2"), url("../assets/fonts/fontello.woff?6865670") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "Icons";
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block; }
+
+.icon-email:before {
+  content: '\e800'; }
+
+.icon-github:before {
+  content: '\e801'; }
+
+.icon-telephone:before {
+  content: '\e802'; }
+
+html {
+  font-size: var(--main-font-size); }
+
+body {
+  font-family: var(--main-font-fam);
+  font-size: 1rem;
+  color: var(--color-black); }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0; }
+
+table {
+  width: 100%;
+  border: none;
+  border-spacing: .5em; }
+
+table td, table th {
+  font-size: 1.6rem;
+  font-weight: 300;
+  vertical-align: top;
+  padding: .2em 0; }
+
+table th {
+  font-weight: bold;
+  text-align: left; }
+
+.container {
+  width: 100%;
+  max-width: 1230px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto; }
+
+.about {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "about__photo about__content about__link";
+  grid-column-gap: 20px; }
+  .about__photo {
+    grid-area: about__photo; }
+  .about__content {
+    grid-area: about__content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+  .about__subtitle {
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--color-black); }
+  .about__title {
+    font-size: 5.46rem;
+    font-weight: bold;
+    color: rgba(43, 42, 44, 0.15); }
+  .about__link {
+    grid-area: about__link;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly; }
+
+.photo {
+  max-width: 100%; }
+
+@media (max-width: 950px) {
+  .about__photo {
+    display: none; } }
+
+@media (max-width: 670px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .about__photo {
+      display: block; } }
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  min-width: 170px;
+  padding: 1.05em 1.75em;
+  margin: 0;
+  cursor: pointer;
+  border: 1px solid var(--color-gray);
+  border-radius: 1.8em;
+  background: none;
+  font-family: inherit;
+  font-weight: 400;
+  line-height: 1.1;
+  font-size: 1.06rem;
+  text-transform: uppercase;
+  color: var(--color-black);
+  text-decoration: none;
+  text-align: center;
+  -webkit-transition: background-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, -webkit-box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear;
+  transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, -webkit-box-shadow 0.2s linear;
+  /*Modificators*/ }
+  .btn:focus {
+    outline: none; }
+  .btn:hover {
+    background-color: var(--color-black);
+    -webkit-box-shadow: 2px 2px 10px fade(black, 24%);
+            box-shadow: 2px 2px 10px fade(black, 24%);
+    color: white; }
+  .btn--sm {
+    padding: 0.7em 1.1em;
+    font-size: 14px;
+    font-weight: 700;
+    border-width: 2px; }
+  @media (max-width: 670px) {
+    .btn + .btn {
+      margin-top: 1rem; } }

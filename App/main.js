@@ -37,11 +37,11 @@ function handleAuthResult(e) {
 // проводим авторизацию
 function login(){
     // данные созданного пользователя и приложения
-    voxImplant.login("alexey.goloburdin@firstapp.sterx.voximplant.com", "testPassword");
+    voxImplant.login("evgeny.shebunin@myapp.evgenyhs.n4.voximplant.com", "testPassword");
 }
 
 function makeCall(){
-    var call = voxImplant.call("79636722229"); // ваш номер для дозвона
+    var call = voxImplant.call("79095525544"); // ваш номер для дозвона
 }
 
 function testCall() {
@@ -58,6 +58,4 @@ function testCall() {
     }
 };
 
-BTN.addEventListener("click", () => {
-    testCall();
-} );
+BTN.addEventListener("click", testCall());
